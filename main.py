@@ -9,6 +9,6 @@ if __name__ == "__main__":
         '\nYour answer was: '))
 
     players_sorted = df.sort_values(stats[stat], ascending=False)
-    print('\n{} by player:\n {}\n'.format(stats[stat], players_sorted))
+    print('\n{} by player:\n {}\n'.format(stats[stat], players_sorted.head()))
 
     print('Top player by {}:\n{}'.format(stats[stat], players_sorted.iloc[0]))
